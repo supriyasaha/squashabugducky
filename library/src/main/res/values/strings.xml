@@ -1,0 +1,10 @@
+<resources>
+	<string name="app_name">Debug Ducky</string>
+	<string name="label_request_Method">"<b>Request Method</b>"</string>
+	<string name="label_request_time">"<b>Request Time</b>"</string>
+	<string name="label_request_headers">"<b>Request Headers</b>"</string>
+	<string name="label_request_body">"<b>Request Body</b>"</string>
+	<string name="label_response_body">"<b>Response Body</b>"</string>
+	<string name="label_response_time">"<b>Response Time</b>"</string>
+	<string name="label_response_headers">"<b>Response Headers</b>"</string>
+</resources>

@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content">
+
+	<LinearLayout
+		android:id="@+id/mainLayout"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="10dp">
+
+		<TextView
+			android:id="@+id/apiUrl"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="CBP:HOME PAGE"
+			android:textSize="18sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/label_request_Method"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/requestMethod"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="get"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/label_request_time"
+			android:textSize="13sp"/>
+
+
+		<TextView
+			android:id="@+id/requestTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="get"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/label_request_headers"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/requestHeaders"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="get"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/label_request_body"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/requestBody"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="{get}"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/label_response_headers"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/responseHeaders"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="jhfdkewjfewfh"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/label_response_time"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/responseTime"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="jhfdkewjfewfh"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="10dp"
+			android:text="@string/label_response_body"
+			android:textSize="13sp"/>
+
+		<TextView
+			android:id="@+id/responseBody"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			android:text="jhfdkewjfewfh"
+			android:textSize="13sp"/>
+
+		<HorizontalScrollView
+			android:id="@+id/scrollViewPrettify"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="5dp"
+			>
+
+			<TextView
+				android:id="@+id/responseBodyPrettify"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="jhfdkewjfewfh"
+				android:textSize="13sp"/>
+
+		</HorizontalScrollView>
+	</LinearLayout>
+</ScrollView>
