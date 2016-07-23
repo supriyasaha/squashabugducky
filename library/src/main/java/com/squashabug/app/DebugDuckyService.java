@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.app;
 
 import android.app.Service;
 import android.content.ContentValues;
@@ -13,8 +13,9 @@ import android.support.annotation.Nullable;
 import android.util.Log;
 import android.widget.Toast;
 
-import com.squashabug.library.database.DatabaseHelper;
-import com.squashabug.library.database.DebugDatabase;
+import com.squashabug.app.database.DatabaseHelper;
+import com.squashabug.app.database.DebugDatabase;
+import com.squashabug.sdk.DebugAIDL;
 
 import java.util.ArrayList;
 import java.util.List;

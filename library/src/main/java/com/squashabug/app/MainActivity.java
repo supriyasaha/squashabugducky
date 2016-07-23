@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.app;
 
 import android.content.Intent;
 import android.database.Cursor;
@@ -19,8 +19,8 @@ import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
 
-import com.squashabug.library.database.DatabaseHelper;
-import com.squashabug.library.database.DebugDatabase;
+import com.squashabug.app.database.DatabaseHelper;
+import com.squashabug.app.database.DebugDatabase;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.squashabug.library.database;
+package com.squashabug.app.database;
 
 
 import android.provider.BaseColumns;

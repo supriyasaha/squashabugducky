@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.app;
 
 import android.content.Context;
 import android.content.Intent;
@@ -9,9 +9,9 @@ import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.TextView;
 
-import com.squashabug.library.models.ApiLogModel;
-import com.squashabug.library.models.BaseModel;
-import com.squashabug.library.models.EventLogModel;
+import com.squashabug.app.models.ApiLogModel;
+import com.squashabug.app.models.BaseModel;
+import com.squashabug.app.models.EventLogModel;
 
 import java.text.SimpleDateFormat;
 import java.util.List;

@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.app;
 
 
 import android.content.ComponentName;
@@ -8,6 +8,8 @@ import android.content.ServiceConnection;
 import android.os.IBinder;
 import android.util.Log;
 import android.widget.Toast;
+
+import com.squashabug.sdk.DebugAIDL;
 
 public class DebugService implements ServiceConnection {
 

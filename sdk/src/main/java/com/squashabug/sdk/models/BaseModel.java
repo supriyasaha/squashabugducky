@@ -1,4 +1,4 @@
-package com.squashabug.library.models;
+package com.squashabug.sdk.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;

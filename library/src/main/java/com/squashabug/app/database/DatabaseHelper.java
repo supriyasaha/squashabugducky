@@ -1,11 +1,11 @@
-package com.squashabug.library.database;
+package com.squashabug.app.database;
 
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
-import com.squashabug.library.DebugApplication;
+import com.squashabug.app.DebugApplication;
 
 public class DatabaseHelper extends SQLiteOpenHelper {
 

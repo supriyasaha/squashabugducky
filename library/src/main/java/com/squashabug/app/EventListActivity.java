@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.app;
 
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -8,9 +8,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.widget.ListView;
 
-import com.squashabug.library.database.DatabaseHelper;
-import com.squashabug.library.database.DebugDatabase;
-import com.squashabug.library.models.EventLogModel;
+import com.squashabug.app.database.DatabaseHelper;
+import com.squashabug.app.database.DebugDatabase;
+import com.squashabug.app.models.EventLogModel;
 
 import java.util.ArrayList;
 import java.util.List;

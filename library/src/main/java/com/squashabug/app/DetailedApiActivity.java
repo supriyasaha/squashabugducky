@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.app;
 
 
 import android.content.Intent;
@@ -14,7 +14,7 @@ import android.widget.HorizontalScrollView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
-import com.squashabug.library.models.ApiLogModel;
+import com.squashabug.app.models.ApiLogModel;
 
 import org.json.JSONArray;
 import org.json.JSONException;

@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.app;
 
 
 import android.database.Cursor;
@@ -11,9 +11,9 @@ import android.widget.ListView;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
-import com.squashabug.library.database.DatabaseHelper;
-import com.squashabug.library.database.DebugDatabase;
-import com.squashabug.library.models.ApiLogModel;
+import com.squashabug.app.database.DatabaseHelper;
+import com.squashabug.app.database.DebugDatabase;
+import com.squashabug.app.models.ApiLogModel;
 
 import java.util.ArrayList;
 import java.util.List;

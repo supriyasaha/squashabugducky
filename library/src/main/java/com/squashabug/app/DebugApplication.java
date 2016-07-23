@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.app;
 
 
 import android.app.Application;

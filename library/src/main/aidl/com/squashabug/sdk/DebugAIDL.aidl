@@ -1,4 +1,4 @@
-package com.squashabug.library;
+package com.squashabug.sdk;
 
 
 interface DebugAIDL {
