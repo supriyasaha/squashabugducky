@@ -15,6 +15,7 @@ public class DebugDatabase {
         public static final String EVENT_NAME = "eventName";
         public static final String PROPERTIES = "properties";
 		public static final String PACKAGE_NAME = "package_name";
+        public static final String SESSION_ID = "session_id";
         public static final String TIMESTAMP = "timestamp";
     }
 
@@ -23,7 +24,8 @@ public class DebugDatabase {
         public static final String ENTRY_ID = "_id";
         public static final String API_LOG = "apiData";
 		public static final String PACKAGE_NAME = "package_name";
-		public static final String TIMESTAMP = "timestamp";
+        public static final String SESSION_ID = "session_id";
+        public static final String TIMESTAMP = "timestamp";
     }
 
 	public static class PackageTable implements BaseColumns{

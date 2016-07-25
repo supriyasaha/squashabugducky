@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
+import android.os.RemoteException;
 import android.util.Log;
 
 import com.squashabug.sdk.models.ApiLogModel;
@@ -14,6 +15,7 @@ import org.json.JSONObject;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
+import java.util.UUID;
 
 public class SquashABug implements ServiceConnection {
 
@@ -21,6 +23,7 @@ public class SquashABug implements ServiceConnection {
 	private static SquashABug serviceInstance;
 	private WeakReference<Context> appContext;
 	private ServiceConnectedCallBacks serviceConnectedCallBacks;
+	private String session_id;
 
 	public static SquashABug getInstance(Context context) {
 		if (serviceInstance == null) {
@@ -37,6 +40,7 @@ public class SquashABug implements ServiceConnection {
 
 		Log.d("IRemote", "Binding is done - Service connected");
 		if (serviceConnectedCallBacks != null) {
+			session_id = UUID.randomUUID().toString();
 			serviceConnectedCallBacks.onServiceConnected(serviceInstance);
 		}
 	}
@@ -71,19 +75,20 @@ public class SquashABug implements ServiceConnection {
 	public void connect() {
 		if (serviceInstance != null && appContext != null && appContext.get() != null) {
 			Intent intent = new Intent("com.squashabug.app.DebugDuckyService.DEBUG_SERVICE");
-			intent.setClassName("com.squashabug.app","com.squashabug.app.DebugDuckyService");
+			intent.setClassName("com.squashabug.app", "com.squashabug.app.DebugDuckyService");
 			// binding to remote service
 			serviceInstance.appContext.get().bindService(intent, serviceInstance, Context.BIND_AUTO_CREATE);
 			Log.d("Binding", DebugAIDL.class.getName());
 		}
 	}
 
-	public void getApiLg(ApiLogModel model) {
+	public void logAPiCalls(ApiLogModel model) {
 
 		try {
 			if (debugService != null && appContext != null && appContext.get() != null) {
 				HashMap<String, String> hashMap = new HashMap<>();
-				hashMap.put("sessionKey", model.sessionKey);
+				hashMap.put("sessionKey", session_id);
+				hashMap.put("timeStamp", String.valueOf(System.currentTimeMillis()));
 				hashMap.put("url", model.url);
 				hashMap.put("method", model.method);
 				hashMap.put("requestTime", model.requestTime);
@@ -114,5 +119,19 @@ public class SquashABug implements ServiceConnection {
 			e.printStackTrace();
 			serviceConnectedCallBacks.onErrorCallBacks(e.getMessage());
 		}
+	}
+
+	public String debugUrl() {
+
+		if (debugService != null && appContext != null && appContext.get() != null) {
+			try {
+				return debugService.getApiUrl();
+			}
+			catch (RemoteException e) {
+				e.printStackTrace();
+				return null;
+			}
+		}
+		return null;
 	}
 }

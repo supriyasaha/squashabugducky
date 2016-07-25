@@ -33,6 +33,8 @@
 			android:name=".DetailedApiActivity"
 			android:parentActivityName=".ApiLofListActivity"/>
 
+		<activity android:name=".ShowLogBasedOnSessionKey"/>
+
 		<service
 			android:name=".DebugDuckyService"
 			android:process=":remote">
