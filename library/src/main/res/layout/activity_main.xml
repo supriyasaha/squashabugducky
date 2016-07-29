@@ -129,6 +129,7 @@
 		android:layout_below="@+id/show_track_toasts"
 		android:layout_marginBottom="5dp"
 		android:layout_marginTop="5dp"
+		android:visibility="gone"
 		android:text="View Logged Events"/>
 
 </RelativeLayout>
